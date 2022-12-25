@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-export function Button({ value }) {
+export function Button({ value, ov }) {
   return (
     <button
       type="button"
-      className="border rounded-3xl h-[10%] w-[43%] bg-blue-400 m-3 p-3 hover:bg-blue-700"
+      className="border rounded-full h-[10%] w-[43%] bg-blue-400 m-3 p-3 hover:bg-blue-700"
     >
       {value}
     </button>
@@ -17,7 +17,7 @@ function Home() {
       <div className="w-full h-1/6 "></div>
       <div className="w-full h-4/6  flex">
         <div className="w-[38%] h-full "></div>
-        <div className="w-[24%] h-full flex-wrap justify-evenly p-10">
+        <div className="w-[24%] h-full flex-wrap justify-evenly">
           <Link to="/Form">
             <Button value="Form" />
           </Link>
@@ -27,17 +27,27 @@ function Home() {
           <Link to="/Data">
             <Button value="Data" />
           </Link>
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
-          <Button value="LanguageSymbol" />
+          <Link to="/formofbook">
+            <Button value="Form of Book" />
+          </Link>
+          <Link to="/usestate">
+            <Button value="Use State" />
+          </Link>
+          <Link to="/book">
+            <Button value="Book" />
+          </Link>
+          <Link to="/counter">
+            <Button value="Counter" />
+          </Link>
+          <Link to="/colourchange">
+            <Button value="ColourChange" />
+          </Link>
+          <Link to="chatgpt">
+            <Button value="CHATGPT" />
+          </Link>
+          <Link to="/book">
+            <Button value="Book" />
+          </Link>
         </div>
         <div className="w-[38%] h-full "></div>
       </div>
@@ -49,7 +59,5 @@ function Home() {
 export default Home;
 
 // https://ahadith-api.herokuapp.com/api/ahadith/all/en
-
-// https://ahadith-api.herokuapp.com/api/chapter/all/en
 
 // http://api.alquran.cloud/v1/juz/30/en.asad

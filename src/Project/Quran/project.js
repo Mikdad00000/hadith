@@ -53,5 +53,5 @@ function Content() {
     </div>
   );
 }
-// self-center w-5 h-5 rounded-full mx-3
+
 export default Project;
