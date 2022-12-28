@@ -22,6 +22,7 @@ function Project() {
 }
 
 function SContent() {
+  const surahDetail = 0;
   return (
     <div className="w-[25%] h-[25%] border-2 rounded-2xl hover:text-blue-500">
       <p className="h-[50%]">Sl</p>

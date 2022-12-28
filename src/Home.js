@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Button({ value, ov }) {
+export function Button({ value }) {
   return (
     <button
       type="button"
@@ -47,6 +47,15 @@ function Home() {
           </Link>
           <Link to="/book">
             <Button value="Book" />
+          </Link>
+          <Link to="/fetchapiarray">
+            <Button value="Fetchapiarray" />
+          </Link>
+          <Link to="/fetchapiarrayofobject">
+            <Button value="Fetchapiarrayofobject" />
+          </Link>
+          <Link to="/pagination">
+            <Button value="Pagination" />
           </Link>
         </div>
         <div className="w-[38%] h-full "></div>
