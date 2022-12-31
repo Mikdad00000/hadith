@@ -18,10 +18,10 @@ function Home() {
       <div className="w-full h-4/6  flex">
         <div className="w-[38%] h-full "></div>
         <div className="w-[24%] h-full flex-wrap justify-evenly">
-          <Link to="/Form">
+          <Link to="/form">
             <Button value="Form" />
           </Link>
-          <Link to="/Project">
+          <Link to="/project">
             <Button value="Project" />
           </Link>
           <Link to="/Data">
@@ -56,6 +56,9 @@ function Home() {
           </Link>
           <Link to="/pagination">
             <Button value="Pagination" />
+          </Link>
+          <Link to="/formik">
+            <Button value="Formik" />
           </Link>
         </div>
         <div className="w-[38%] h-full "></div>

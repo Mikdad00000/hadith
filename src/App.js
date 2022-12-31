@@ -12,14 +12,16 @@ import InputDynamic from "./ChatGPT";
 import FetchAptArray from "./Practice/FetchApiArray.js";
 import FetchAptArrayOfObject from "./Practice/FetchApiArrayOfObject.js";
 import Pagination from "./Practice/Pagination.js";
+import Hadith from "./Project/Hadith/Hadith.js";
+import Fiqah from "./Project/Fiqah/Fiqah.js";
 
 function App() {
   return (
     <div className="w-full h-screen">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Project" element={<Project />} />
-        <Route path="/Form" element={<Form />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/form" element={<Form />} />
         <Route path="/formofbook" element={<FormofBook />} />
         <Route path="/usestate" element={<UseState />} />
         <Route path="/book" element={<Book />} />
@@ -32,6 +34,8 @@ function App() {
           element={<FetchAptArrayOfObject />}
         />
         <Route path="/pagination" element={<Pagination />} />
+        <Route path="/hadith" element={<Hadith />} />
+        <Route path="/fiqah" element={<Fiqah />} />
       </Routes>
     </div>
   );
