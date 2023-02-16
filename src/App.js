@@ -14,7 +14,14 @@ import FetchAptArrayOfObject from "./Practice/FetchApiArrayOfObject.js";
 import Pagination from "./Practice/Pagination.js";
 import Hadith from "./Project/Hadith/Hadith.js";
 import Fiqah from "./Project/Fiqah/Fiqah.js";
-
+import Basic from "./Formik.js";
+import Register from "./HujurerFormik.js";
+import StudentSignUp from "./StudentSignUp";
+import TeacherSignUp from "./TeacherSignUp";
+import List from "./List";
+import Users from "./Users";
+import Test from "./test";
+import PaginationSecond from "./State/PaginationSecond";
 function App() {
   return (
     <div className="w-full h-screen">
@@ -36,6 +43,14 @@ function App() {
         <Route path="/pagination" element={<Pagination />} />
         <Route path="/hadith" element={<Hadith />} />
         <Route path="/fiqah" element={<Fiqah />} />
+        <Route path="/formik" element={<Basic />} />
+        <Route path="/hujurerformik" element={<Register />} />
+        <Route path="/data" element={<TeacherSignUp />} />
+        <Route path="/data2" element={<StudentSignUp />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/test" element={<Test />} />
+        <Route path="/paginationsecond" element={<PaginationSecond />} />
       </Routes>
     </div>
   );

@@ -57,8 +57,24 @@ function Home() {
           <Link to="/pagination">
             <Button value="Pagination" />
           </Link>
+          <Link to="/paginationsecond">
+            <Button value="Pagination Second" />
+          </Link>
+
           <Link to="/formik">
             <Button value="Formik" />
+          </Link>
+          <Link to="/hujurerformik">
+            <Button value="Register" />
+          </Link>
+          <Link to="/list">
+            <Button value="List" />
+          </Link>
+          <Link to="/users">
+            <Button value="Users" />
+          </Link>
+          <Link to="/test">
+            <Button value="Test" />
           </Link>
         </div>
         <div className="w-[38%] h-full "></div>
